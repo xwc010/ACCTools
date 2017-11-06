@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ACCTools1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ACCTools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
