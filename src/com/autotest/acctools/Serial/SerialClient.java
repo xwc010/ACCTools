@@ -14,12 +14,10 @@ public class SerialClient {
     public static final int ERROR_PORT_ISNULL = 400; // SerialPort为空
     public static final int ERROR_DISCONNECTED = 401; // 断开连接
     public static final int ERROR_STREAM_DATA = 402; // 输入输出流或数据异常
+    public static final int ERROR_TIME_OUT = 403; // 多次重试后超时
 
     private static SerialClient mSerialClient = new SerialClient();
-
-    private SerialClient() {
-
-    }
+    private SerialClient() {}
 
     public static SerialClient getInstance() {
         return mSerialClient;
@@ -40,7 +38,8 @@ public class SerialClient {
      * @throws NoSuchPort                 没有该端口对应的串口设备
      * @throws PortInUse                  端口已被占用
      */
-    public boolean initSerialPort(String portName, int baudrate) {
+    public boolean openSerialPort(String portName, int baudrate) {
+        System.out.println("SerialClient Has openSerialPort Back!!!!!");
         try {
             //通过端口名识别端口
             CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier(portName);
@@ -84,6 +83,13 @@ public class SerialClient {
         return new SerialPortEventListener() {
             @Override
             public void serialEvent(SerialPortEvent serialPortEvent) {
+                System.out.println("SerialClient Has Data Back!!!!!");
+                synchronized (shareObj) {
+                    shareObj[0] = "false";
+                    shareObj.notifyAll();
+                }
+
+
                 switch (serialPortEvent.getEventType()) {
                     case SerialPortEvent.BI: // 10 通讯中断
 //                        JOptionPane.showMessageDialog(null, "与串口设备通讯中断", "错误", JOptionPane.INFORMATION_MESSAGE);
@@ -138,6 +144,12 @@ public class SerialClient {
      * @return boolean
      */
     public boolean sendToPort(byte[] order) {
+        System.out.println("SerialClient do sendToPort method!!!!");
+
+        if(mSerialPort == null){
+            return false;
+        }
+
         OutputStream out = null;
         int tag = -1;
         try {
@@ -145,6 +157,7 @@ public class SerialClient {
             out.write(order);
             out.flush();
             tag = 1;
+            startTimeOutWartch(order);
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("往串口发送数据失败！");
@@ -174,7 +187,7 @@ public class SerialClient {
      * @throws SerialPortInputStreamCloseFailure 关闭串口对象输入流出错
      */
     private byte[] readFromPort() throws ReadDataFromSerialPortFailure, SerialPortInputStreamCloseFailure {
-
+        System.out.println("SerialClient do readFromPort method!!!!!");
         InputStream in = null;
         byte[] bytes = null;
 
@@ -207,10 +220,58 @@ public class SerialClient {
     }
 
     public void register(SerialObserver observer) {
+        System.out.println("SerialClient do register method!!!!!");
         mObserver = observer;
     }
 
     public void unregister(SerialObserver observer) {
+        System.out.println("SerialClient do unregister method!!!!!");
         mObserver = null;
+    }
+
+    private int MAX_TRY_TIMES = 3; // 最大重发次数
+    private int currentTimes = 0;
+    public SerialClient setMaxTryTimes(int maxTimes){
+        MAX_TRY_TIMES = maxTimes;
+        return mSerialClient;
+    }
+
+    private long TeyAgainTime = 500; // 微秒
+    public SerialClient setTeyAgainTime(long timeout){
+        System.out.println("SerialClient do setTeyAgainTime method!!!!");
+        TeyAgainTime = timeout;
+        return mSerialClient;
+    }
+
+    private String[] shareObj = {"true"};
+    private void startTimeOutWartch(final byte[] order) {
+        System.out.println("SerialClient do startTimeOutWartch method!!!!");
+        currentTimes ++;
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                synchronized (shareObj) {
+                    shareObj[0] = "true";
+                    while ("true".equals(shareObj[0])) {
+                        try {
+                            shareObj.wait(TeyAgainTime);
+
+                            if ("true".equals(shareObj[0])) {
+                                System.out.println("timeout!");
+                                if(currentTimes < MAX_TRY_TIMES){
+                                    sendToPort(order);
+                                }else {
+                                    if(mObserver != null) mObserver.fail(ERROR_TIME_OUT);
+                                }
+                            }
+                            break;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }).start();
     }
 }
