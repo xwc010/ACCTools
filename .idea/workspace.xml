@@ -2,105 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="843cf85d-269f-446c-9cc1-cab98dbaca04" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ACCTools.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/RXTXcomm.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/beautyeye_lnf.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/busybox" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-lang3-3.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jcommon-1.0.16.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jxl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/ExceptionWriter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/NoSuchPort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/NotASerialPort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/PortInUse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/ReadDataFromSerialPortFailure.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/SendDataToSerialPortFailure.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/SerialPortInputStreamCloseFailure.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/SerialPortOutputStreamCloseFailure.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/SerialPortParameterFailure.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/exception/TooManyListeners.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$ACCCCDSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$ACCOningCCDSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$ACCSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$BACCSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$BSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$CCDSwingWorker.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$SObserver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$SerialListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run$logcatThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/main/Run.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/FileFilterTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/G.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/HistogramFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/ImageComparer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/Parse$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/Parse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/PropertyUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/SerialTool.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/StreamGobbler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/Utils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/tools/computer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/DigitOnlyField$UpperCaseDocument.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/DigitOnlyField.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/MainLayout$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/MainLayout$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/MainLayout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/Main_Layout$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/Main_Layout$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/com/lckj/autotest/ui/Main_Layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/result.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/computer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ACCTools.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ACCTools1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ACCTools.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/acc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/acc_ccd.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/b.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/b_acc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/ccd.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/logcat.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ACCTools/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autotest/acctools/Serial/SerialClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/autotest/acctools/Serial/TimeOutTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/ExceptionWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/NoSuchPort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/NotASerialPort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/PortInUse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/ReadDataFromSerialPortFailure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/SendDataToSerialPortFailure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/SerialPortInputStreamCloseFailure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/SerialPortOutputStreamCloseFailure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/SerialPortParameterFailure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/exception/TooManyListeners.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/main/Run.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/FileFilterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/G.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/HistogramFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/ImageComparer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/Parse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/PropertyUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/SerialTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/StreamGobbler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/tools/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/ui/DigitOnlyField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/ui/MainLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lckj/autotest/ui/Main_Layout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -415,7 +318,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
